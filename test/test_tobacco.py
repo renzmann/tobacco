@@ -41,12 +41,14 @@ class TestPipe(TestCase):
         self.assertEqual(res, 1)
 
     def test_long_pipe(self):
-        res = 0 >> plus_one >> minus_amount >> plus_amount
-        self.assertEqual(res, 4)
+        # 3 + 1 - 2 + 5 = 7
+        res = 3 >> plus_one >> minus_amount >> plus_amount
+        self.assertEqual(res, 7)
 
     def test_keywords(self):
-        res = 0 >> plus_one >> minus_amount(amount=2) >> plus_amount(amount=2)
-        self.assertEqual(res, 1)
+        # 5 - 2 + 8 = 11
+        res = 5 >> minus_amount(amount=2) >> plus_amount(amount=8)
+        self.assertEqual(res, 11)
 
     def test_string_pipe(self):
         res = "foo" >> bang_string >> strike_string
