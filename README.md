@@ -6,8 +6,8 @@ decorator will take a function and repurpose the builtin right-bitshift
 operator `>>` to be a function pipe. I've hardly ever seen anyone using 
 `>>`, so it doesn't seem likely many people will miss the default behavior.
 
-A pipeline takes the value of a function call on the left-hand-side, and
-passes it in as the first argument to the function on the right hand side:
+A pipeline takes the value of a function call on the left-hand side, and
+passes it in as the first argument to the function on the right-hand side:
 
 ```python
 0 >> f >> g  # evaluates to g(f(0))
@@ -63,7 +63,7 @@ In this short example, `result` is the output of `upload_to_database` after
 all the prior steps completed.
 
 
-## Installtion
+## Installation
 
 We're not on PyPi yet; there's a hundred versions of something similar on there
 already. This is a bare-minimum version of function pipelines. Just clone
