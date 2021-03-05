@@ -66,7 +66,7 @@ all the prior steps completed.
 ## Installtion
 
 We're not on PyPi yet; there's a hundred versions of something similar on there
-already. This is just a bare-minimum version of function pipelines. Just clone
+already. This is a bare-minimum version of function pipelines. Just clone
 the repository and pip-install it locally.
 
 ```shell
