@@ -27,7 +27,7 @@ You can even specify keyword closures within the pipeline
 from tobacco import pipe
 
 
-@pipe  # `pipe` overrides the builtin right-bitshift operator `
+@pipe  # `pipe` overrides the builtin right-bitshift operator `>>`
 def plus_one(a: int) -> int:
     return a + 1
 
