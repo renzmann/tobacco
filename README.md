@@ -3,7 +3,7 @@
 Do you miss the `%>%` from R/dplyr? What about the `|>` from Julia? Now
 you can use a `tobacco.pipe` to chain together function calls! The `@pipe`
 decorator will take a function and repurpose the builtin right-bitshift
-operator `>>` to be a function pipe. I've hardly ever seen anyone using 
+operator `>>` to be a function pipe. I've hardly ever seen anyone using
 `>>`, so it doesn't seem likely many people will miss the default behavior.
 
 A pipeline takes the value of a function call on the left-hand side, and
@@ -18,6 +18,13 @@ You can even specify keyword closures within the pipeline
 ```python
 # Evaluates to g(f(0, some_keyword=5), another="foo")
 0 >> f(some_keyword=5) >> g(another="foo")
+```
+
+
+## Installation
+
+```sh
+pip install tobacco
 ```
 
 
@@ -61,15 +68,3 @@ result = (
 
 In this short example, `result` is the output of `upload_to_database` after
 all the prior steps completed.
-
-
-## Installation
-
-We're not on PyPi yet; there's a hundred versions of something similar on there
-already. This is a bare-minimum version of function pipelines. Just clone
-the repository and pip-install it locally.
-
-```shell
-git clone https://github.com/renzmann/tobacco
-pip install ./tobacco
-```
