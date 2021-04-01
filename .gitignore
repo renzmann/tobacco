@@ -1,3 +1,6 @@
 *__pycache__
 .idea/
 venv/
+dist/
+build/
+*.egg-info
