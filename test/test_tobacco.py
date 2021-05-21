@@ -1,9 +1,3 @@
-#  --------------------------------------------------------------------------
-#  Copyright (c) 2020, antuit.ai. All rights reserved.
-#  Proprietary and confidential
-#  Unauthorized copying of this file, via any medium, is strictly prohibited.
-#  --------------------------------------------------------------------------
-
 from unittest import TestCase
 
 from tobacco import pipe
