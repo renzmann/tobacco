@@ -6,6 +6,10 @@ class pipe:
     def __init__(self, func):
         self.func = func
 
+    @property
+    def __qualname__(self):
+        return self.func.__qualname__
+
     def __call__(self, *args, **kwargs):
         if kwargs and not args:
             return pipe(partial(self.func, **kwargs))
