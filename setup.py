@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="tobacco",
-    version="1.0.3",
+    version="1.0.4",
     description="Function pipelines for python",
     author="Robert Enzmann",
     url="https://github.com/renzmann/tobacco",
