@@ -1,4 +1,4 @@
-# Tobacco: Your shiny new pipe `>>`!
+# Tobacco: Your Shiny New Pipe `>>`!
 
 Do you miss the `%>%` from R/dplyr? What about the `|>` from Julia? Now
 you can use a `tobacco.pipe` to chain together function calls! The `@pipe`
